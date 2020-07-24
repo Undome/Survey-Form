@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Survey Form for FreeCodeCamp</title>
+		<style>
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Survey Form for FreeCodeCamp</h1>
+			<p id="description">This survey is to know some things about you</p>
+		</header>
+		<form id="survey-form">
+			<div id="name-div">
+				<label id="name-label" for="name">Name</label><br>
+				<input type="text" id="name" placeholder="Name" required>
+			</div>
+			<div id="email-div">
+				<label id="email-label" for="email">Email</label><br>
+				<input type="email" id="email" placeholder="Email" required>
+			</div>
+			<div id="number-div">
+				<label id="number-label" for="number">Age</label><br>
+				<input type="number" id="number" placeholder="Age" min="0" max="125" required>
+			</div>
+		<!--This is going to be the div used for the Dropdown menu-->
+			<div id="dropdown-div">
+				<label id="dropdown-label" for="">What is your favourit sci-fi gender?</label>
+			</div>
+		<!--This div is going to be for the radio buttons-->
+			<div id="radio-div">
+				<p>If you could have one of this movie perks, which one would it be?</p>
+				<label id="magic-label" for="magic">
+					<input id="magic" type="radio" name="perk" value="magic">Use Magic.
+				</label><br>
+				<label id="spaceship-label" for="spaceship">
+					<input id="spaceship" value="spaceship" type="radio" name="perk">Be captain of a spaceship.
+				</label><br>
+				<label id="force-label" for="force">
+					<input id="force" value="force" type="radio" name="perk">Be a force wielder.
+				</label><br>
+				<label id="mutant-label" for="mutant">
+					<input id="mutant" value="mutant" type="radio" name="perk">A mutant X gene.
+				</label><br>
+				<label id="all-knowing-label" for="all-knowing">
+					<input id="all-knowing" value="all-knowing" type="radio" name="perk">Be All-knowing.
+				</label><br>
+				<label id="time-machine-label" for="time-machine">
+					<input id="time-machine" value="time-machine" type="radio" name="perk">Own a time machine
+				</label><br>
+			</div>
+		<!--This div is going to be for the checkboxes-->
+			<div id="checkbox-div">
+				<p>What kind of adventure would you like to have?</p>
+				<label id="zombie-apocalypse-label" for="zombie-apocalypse">
+					<input id="zombie-apocalypse" type="checkbox" name="adventure" value="zombies">Live a zombie apocalypse.
+				</label><br>
+				<label id="middle-age-label" for="middle-age">
+					<input id="middle-age" value="middle-age" type="checkbox" name="adventure">Have a middle age adventure.
+				</label><br>
+				<label id="other-world-travel" for="other-world">
+					<input id="other-world" value="other-world" type="checkbox" name="adventure">Be transported to another world.
+				</label><br>
+				<label id="space-label" for="space">
+					<input id=space"" value="space" type="checkbox" name="adventure">Go on a space adventure
+				</label><br>
+				<label id="time-travel-label" for="time-tarvel">
+					<input id="time-tarvel" value="time-travel" type="checkbox" name="adventure">Go in a time traveling adventure.
+				</label><br>
+				<label id="post-apocalyptic-label" for="post-apocalypse">
+					<input id="post-apocalyps" value="post-apocalypse" type="checkbox" name="adventure">A post apocalyptic adventure.
+				</label><br>
+			</div><br>
+		<!--this div is going to be for the textarea-->
+			<div id="textarea-div">
+				<label id="area-label" for="text-area">Tell us why you love this movies?</label><br>
+				<textarea id="text-area" name="comments" rows="8" cols="100"></textarea>
+			</div>
+			<div>
+				<button id="submit" type="submit">Submit</button>
+				<button id="reset" type="reset">Reset</button>
+			</div>
+		</form>
+	</body>
+</html>
