@@ -4,13 +4,16 @@
 		<title>Survey Form for FreeCodeCamp</title>
 		<style>
 			body{
-				text-align: center;
-				
+				text-align: center;	
 			}
 			.surform {
 				background-color: azure;
 				text-align: left;
 				margin-right: 1.5cm auto 0 auto;
+			}
+			.drop {
+				background-color: #5353c6;
+				color: white;
 			}
 		</style>
 	</head>
@@ -35,8 +38,14 @@
 				</div>
 			<!--This is going to be the div used for the Dropdown menu-->
 				<div id="dropdown-div">
-					<label id="dropdown-label" for="">What is your favourit sci-fi gender?</label>
-				</div>
+					<label id="dropdown-label" for="genders">What is your favourit sci-fi gender?</label>
+					<select name="genders" id="genders" class="drop">
+						<option value="space">Space</option>
+						<option value="fantasy">Fantasy</option>
+						<option value="zombies">Zombies</option>
+						<option value="time-travel">Time travel</option>
+					</select>
+				</div><br>
 			<!--This div is going to be for the radio buttons-->
 				<div id="radio-div">
 					<p>If you could have one of this movie perks, which one would it be?</p>
@@ -72,7 +81,7 @@
 						<input id="other-world" value="other-world" type="checkbox" name="adventure">Be transported to another world.
 					</label><br>
 					<label id="space-label" for="space">
-						<input id=space"" value="space" type="checkbox" name="adventure">Go on a space adventure
+						<input id="space" value="space" type="checkbox" name="adventure">Go on a space adventure
 					</label><br>
 					<label id="time-travel-label" for="time-tarvel">
 						<input id="time-tarvel" value="time-travel" type="checkbox" name="adventure">Go in a time traveling adventure.
